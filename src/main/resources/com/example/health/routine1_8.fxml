@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.health.Routine1Controller">
+    <children>
+        <VBox layoutX="-55.0" prefHeight="411.0" prefWidth="142.0" style="-fx-background-color: #043730;">
+            <children>
+                <HBox alignment="BOTTOM_LEFT" prefHeight="72.0" prefWidth="168.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="142.0" style="-fx-background-color: #ed6637; -fx-background-radius: 50;" text="Routine   " textFill="WHITE">
+                            <font>
+                                <Font name="JetBrains Mono SemiBold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="10.0" prefHeight="9.0" prefWidth="168.0" />
+                <HBox layoutX="10.0" layoutY="82.0" prefHeight="68.0" prefWidth="168.0" />
+                <HBox layoutX="10.0" layoutY="91.0" prefHeight="180.0" prefWidth="168.0" />
+                <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="159.0" prefHeight="68.0" prefWidth="168.0">
+                    <children>
+                        <Button fx:id="back_button" alignment="CENTER" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: #ed6637; -fx-background-radius: 50;" text="   Back " textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="JetBrains Mono SemiBold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+            </children></VBox>
+        <VBox layoutX="87.0" prefHeight="400.0" prefWidth="513.0" style="-fx-background-color: #f4f4f4;">
+            <children>
+                <AnchorPane prefHeight="336.0" prefWidth="513.0">
+                    <children>
+                        <VBox prefHeight="411.0" prefWidth="278.0" style="-fx-background-color: #DDDDDD;">
+                            <children>
+                                <ScrollPane prefHeight="414.0" prefWidth="278.0">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="274.0">
+                                            <children>
+                                                <ListView fx:id="routineList" layoutX="2.0" layoutY="41.0" onMouseClicked="#routinecheck" prefHeight="370.0" prefWidth="271.0" />
+                                                <TextField fx:id="routineDetailTextField" layoutX="23.0" layoutY="14.0" />
+                                                <Button fx:id="changeRoutineNameButton" layoutX="194.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeRoutineNameButtonAction" style="-fx-background-radius: 10;" text="이름 변경" />
+                                            </children></AnchorPane>
+                                    </content>
+                                </ScrollPane>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="275.0" layoutY="-1.0" prefHeight="411.0" prefWidth="290.0" style="-fx-background-color: #dddddd;">
+                            <children>
+                                <VBox />
+                                <VBox prefHeight="45.0" prefWidth="290.0">
+                                    <children>
+                                        <Pane prefHeight="270.0" prefWidth="290.0">
+                                            <children>
+                                                <TextField alignment="CENTER" layoutX="65.0" layoutY="12.0" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: #dddddd;" text="Check pose!">
+                                                    <font>
+                                                        <Font name="JetBrains Mono SemiBold" size="12.0" />
+                                                    </font>
+                                                </TextField>
+                                            </children></Pane>
+                                    </children></VBox>
+                                <VBox alignment="CENTER" prefHeight="189.0" prefWidth="290.0" style="-fx-background-color: ffffff;">
+                                    <children>
+                                        <ImageView fx:id="routine_img" fitHeight="188.0" fitWidth="206.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                </VBox>
+                                <HBox prefHeight="120.0" prefWidth="290.0">
+                                    <children>
+                                        <VBox prefHeight="119.0" prefWidth="303.0">
+                                            <children>
+                                                <HBox alignment="CENTER" prefHeight="40.0" prefWidth="290.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" prefHeight="28.0" prefWidth="114.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;" text="설정한 운동 무게">
+                                                            <HBox.margin>
+                                                                <Insets right="15.0" />
+                                                            </HBox.margin></Label>
+                                                        <Label fx:id="weightLabel" prefHeight="14.0" prefWidth="73.0" />
+                                                    </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="290.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" prefHeight="28.0" prefWidth="114.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;" text="설정한 운동 횟수">
+                                                            <HBox.margin>
+                                                                <Insets right="15.0" />
+                                                            </HBox.margin>
+                                                        </Label>
+                                                        <Label fx:id="repsLabel" prefHeight="14.0" prefWidth="73.0" />
+                                                    </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="50.0" prefHeight="40.0" prefWidth="290.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" prefHeight="28.0" prefWidth="114.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;" text="설정한 운동 세트 수">
+                                                            <HBox.margin>
+                                                                <Insets right="15.0" />
+                                                            </HBox.margin>
+                                                        </Label>
+                                                        <Label fx:id="setsLabel" prefHeight="14.0" prefWidth="73.0" />
+                                                    </children>
+                                                </HBox>
+                                            </children></VBox>
+                                    </children></HBox>
+                                <HBox alignment="CENTER" prefHeight="59.0" prefWidth="290.0">
+                                    <children>
+                                        <Button fx:id="prev_routine" mnemonicParsing="false" onAction="#prevRoutine" prefHeight="35.0" prefWidth="84.0" style="-fx-background-radius: 10;" text="이전">
+                                            <HBox.margin>
+                                                <Insets right="20.0" />
+                                            </HBox.margin>
+                                        </Button>
+                                        <Button fx:id="Next_routine" layoutX="113.0" layoutY="22.0" mnemonicParsing="false" onAction="#nextRoutine" prefHeight="35.0" prefWidth="84.0" style="-fx-background-radius: 10;" text="다음">
+                                 <HBox.margin>
+                                    <Insets right="15.0" />
+                                 </HBox.margin></Button>
+                              <Button fx:id="deleteRoutine" layoutX="61.0" layoutY="22.0" mnemonicParsing="false" onAction="#deleteRoutine" prefHeight="35.0" prefWidth="84.0" style="-fx-background-radius: 10;" text="Delete" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.health.CalController">
+   <children>
+      <VBox layoutX="-55.0" prefHeight="411.0" prefWidth="142.0" style="-fx-background-color: #043730;">
+         <children>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="72.0" prefWidth="168.0">
+               <children>
+                  <Button alignment="CENTER_RIGHT" mnemonicParsing="false" prefHeight="36.0" prefWidth="139.0" style="-fx-background-color: #ed6637; -fx-background-radius: 50;" text="Calories " textFill="WHITE">
+                     <font>
+                        <Font name="JetBrains Mono SemiBold" size="14.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="9.0" prefWidth="168.0" />
+            <HBox layoutX="10.0" layoutY="82.0" prefHeight="68.0" prefWidth="168.0" />
+            <HBox layoutX="10.0" layoutY="91.0" prefHeight="180.0" prefWidth="168.0" />
+            <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="159.0" prefHeight="68.0" prefWidth="168.0">
+               <children>
+                  <Button fx:id="back_button" alignment="CENTER" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: #ed6637; -fx-background-radius: 50;" text="   Back " textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="JetBrains Mono SemiBold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children></VBox>
+      <VBox layoutX="87.0" prefHeight="400.0" prefWidth="513.0" style="-fx-background-color: #f4f4f4;">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="487.0" style="-fx-background-color: #dddddd;">
+               <children>
+                  <ImageView fitHeight="44.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" />
+                  <TextField fx:id="searchFoodTextField" alignment="CENTER" prefHeight="25.0" prefWidth="209.0" promptText="search and choose what you eat today" style="-fx-background-radius: 10;">
+                     <font>
+                        <Font size="11.0" />
+                     </font></TextField>
+                  <HBox alignment="CENTER" prefHeight="44.0" prefWidth="58.0">
+                     <children>
+                        <Button fx:id="searchFoodButton" alignment="TOP_RIGHT" mnemonicParsing="false" onAction="#searchFoodButtonAction" text="🔍" />
+
+                     </children></HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="291.0" style="-fx-background-color: #f4f4f4;">
+                     <children>
+                        <ImageView fitHeight="43.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="32.0" fitWidth="28.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../cart.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="43.0" fitWidth="18.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label text="what you eat today" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="336.0" prefWidth="513.0">
+               <children>
+                  <VBox prefHeight="355.0" prefWidth="276.0" style="-fx-background-color: #DDDDDD;">
+                     <children>
+                        <ScrollPane prefHeight="707.0" prefWidth="276.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="353.0" prefWidth="262.0">
+                                 <children>
+                                    <ListView fx:id="searchedFoodListView" layoutX="2.0" layoutY="-1.0" onMouseClicked="#handleFoodItemDoubleClick" prefHeight="355.0" prefWidth="268.0" />
+                                 </children></AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="275.0" layoutY="-1.0" prefHeight="368.0" prefWidth="290.0" style="-fx-background-color: #dddddd;">
+                     <children>
+                        <ScrollPane prefHeight="294.0" prefWidth="290.0">
+                           <content>
+                              <ListView fx:id="selectedFoodList" onMouseClicked="#handleSelectedFoodDoubleClick" prefHeight="244.0" prefWidth="287.0" />
+                           </content>
+                        </ScrollPane>
+                        <VBox />
+                        <VBox prefHeight="169.0" prefWidth="290.0">
+                           <children>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="290.0">
+                                 <children>
+                                    <TextField prefHeight="22.0" prefWidth="70.0" style="-fx-background-color: #DDDDDD;" text="칼 로 리 :">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></TextField>
+                                    <Label fx:id="calLabel" prefHeight="14.0" style="-fx-background-color: #dddddd;" />
+                                    <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="180.0">
+                                       <children>
+                                          <HBox prefHeight="34.0" prefWidth="69.0" />
+                                          <TextField prefHeight="22.0" prefWidth="70.0" style="-fx-background-color: #DDDDDD;" text="단 백 질   :" />
+                                          <Label fx:id="proteinLabel" style="-fx-background-color: #dddddd;" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="290.0">
+                                 <children>
+                                    <TextField prefHeight="22.0" prefWidth="76.0" style="-fx-background-color: #DDDDDD;" text="  지     방  :" />
+                                    <Label fx:id="fatLabel" style="-fx-background-color: #dddddd;" />
+                                    <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="179.0">
+                                       <children>
+                                          <HBox prefHeight="34.0" prefWidth="69.0" />
+                                          <TextField prefHeight="22.0" prefWidth="70.0" style="-fx-background-color: #DDDDDD;" text="탄수화물 :" />
+                                          <Label fx:id="carbsLabel" style="-fx-background-color: #dddddd;" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER">
+                                 <children>
+                                    <Button fx:id="showresult" alignment="CENTER" mnemonicParsing="false" onAction="#showresultButtonAction" text="결과 확인" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

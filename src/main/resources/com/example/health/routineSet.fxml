@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.health.RoutineSetController">
+    <children>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="394.0" style="-fx-background-color: #B0C0CB;">
+            <children>
+                <Pane layoutX="4.0" layoutY="5.0" prefHeight="261.0" prefWidth="386.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="43.0" prefWidth="386.0">
+                            <children>
+                        <Label alignment="CENTER" prefHeight="22.0" prefWidth="135.0" style="-fx-background-color: #E9E9E9;" text="운동 루틴 세부 설정" />
+                            </children>
+                        </HBox>
+                        <VBox layoutX="14.0" layoutY="43.0" prefHeight="172.0" prefWidth="359.0">
+                            <children>
+                                <HBox prefHeight="171.0" prefWidth="359.0">
+                                    <children>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="152.0" prefWidth="359.0">
+                                            <children>
+                                                <HBox alignment="CENTER" prefHeight="40.0" prefWidth="359.0">
+                                                    <children>
+                                                        <Label prefHeight="14.0" prefWidth="112.0" text="운동 무게 설정" />
+                                                        <TextField fx:id="setExerciseWeight" alignment="CENTER" promptText="운동 무게를 설정하시오" />
+                                                    </children></HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="43.0" prefWidth="359.0">
+                                                    <children>
+                                                        <Label prefHeight="14.0" prefWidth="114.0" text="운동 반복 횟수 설정" />
+                                                        <TextField fx:id="setExerciseRaps" alignment="CENTER" promptText="반복 횟수를 설정" />
+                                                    </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="53.0" prefHeight="43.0" prefWidth="359.0">
+                                                    <children>
+                                                        <Label prefHeight="14.0" prefWidth="109.0" text="운동 세트 수 설정">
+                                             <HBox.margin>
+                                                <Insets right="6.0" />
+                                             </HBox.margin></Label>
+                                                        <TextField fx:id="setExerciseSets" alignment="CENTER" prefHeight="22.0" prefWidth="162.0" promptText="운동 세트 수를 설정하시오" />
+                                                    </children>
+                                                </HBox>
+                                            </children></VBox>
+                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="125.0" prefWidth="20.0" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <Button fx:id="back_button" layoutX="241.0" layoutY="215.0" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="22.0" prefWidth="67.0" style="-fx-background-color: #E9E9E9;" text="닫기" />
+                        <Button fx:id="routineSaveButton" layoutX="112.0" layoutY="215.0" mnemonicParsing="false" onAction="#routineSaveButtonAction" prefHeight="22.0" prefWidth="67.0" style="-fx-background-color: #E9E9E9;" text="저장" />
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.health.AddfriendController">
+    <children>
+        <VBox layoutX="-31.0" prefHeight="400.0" prefWidth="142.0" style="-fx-background-color: #043730;">
+            <children>
+                <HBox prefHeight="40.0" prefWidth="120.0" />
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="82.0" prefWidth="120.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="142.0" style="-fx-background-color: #ed6637;" text="Friends " textFill="WHITE">
+                            <font>
+                                <Font name="JetBrains Mono SemiBold" size="15.0" />
+                            </font>
+                        </Label>
+                    </children></HBox>
+                <HBox layoutX="10.0" layoutY="10.0" prefHeight="216.0" prefWidth="120.0" />
+                <HBox layoutX="10.0" layoutY="132.0" prefHeight="48.0" prefWidth="156.0">
+                    <children>
+                        <Button fx:id="back_button" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #ed6637; -fx-background-radius: 50;" text="Back" textFill="WHITE">
+                            <font>
+                                <Font name="JetBrains Mono SemiBold" size="18.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+            </children></VBox>
+        <VBox layoutX="111.0" prefHeight="400.0" prefWidth="489.0">
+            <children>
+                <HBox prefHeight="406.0" prefWidth="489.0">
+                    <children>
+                        <VBox alignment="CENTER" prefHeight="400.0" prefWidth="240.0">
+                            <children>
+                                    <Label prefHeight="23.0" prefWidth="99.0" text="Friend list">
+                                        <font>
+                                            <Font size="18.0" />
+                                        </font>
+                        </Label>
+                                <ScrollPane prefHeight="358.0" prefWidth="240.0">
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                           <content>
+                              <ListView fx:id="friend_list" prefHeight="614.0" prefWidth="224.0" />
+                           </content>
+                                </ScrollPane>
+                        <HBox alignment="CENTER" prefHeight="53.0" prefWidth="240.0">
+                           <children>
+                              <Button fx:id="view_button" mnemonicParsing="false" onAction="#viewButtonAction" style="-fx-background-radius: 50; -fx-background-color: #ed6637;" text="View" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="JetBrains Mono SemiBold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="del_button" mnemonicParsing="false" onAction="#delButtonAction" style="-fx-background-radius: 50; -fx-background-color: #ed6637;" text="Del" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="JetBrains Mono SemiBold" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                            </children>
+                        </VBox>
+                  <VBox prefHeight="400.0" prefWidth="249.0">
+                     <children>
+                        <HBox>
+                           <children>
+                                        <TextField fx:id="search_textfield" alignment="CENTER" prefHeight="22.0" prefWidth="175.0" promptText="친구의 아이디를 입력하세요." style="-fx-background-radius: 50;">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin></TextField>
+                                        <Button fx:id="search_button" mnemonicParsing="false" onAction="#searchButtonAction" prefHeight="22.0" prefWidth="31.0" text="🔍">
+                                            <opaqueInsets>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                              <ScrollPane prefHeight="349.0" prefWidth="250.0">
+                           <content>
+                              <ListView fx:id="search_list" prefHeight="614.0" prefWidth="233.0" />
+                           </content></ScrollPane>
+                        <HBox alignment="CENTER" prefHeight="47.0" prefWidth="250.0">
+                           <children>
+                              <Button fx:id="add_button" mnemonicParsing="false" onAction="#addButtonAction" style="-fx-background-color: #ed6637; -fx-background-radius: 50;" text="Add" textFill="WHITE">
+                                 <font>
+                                    <Font name="JetBrains Mono SemiBold" size="12.0" />
+                                 </font></Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                    </children>
+                </HBox>
+            </children></VBox>
+    </children>
+</AnchorPane>

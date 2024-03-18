@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="201.0" prefWidth="229.0" style="-fx-background-color: #f8f2e6;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.health.SignCpt">
+    <children>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="229.0">
+            <children>
+                <Label prefWidth="202.0" text="회원가입이 완료되었습니다">
+                    <padding>
+                        <Insets bottom="25.0" top="20.0" />
+                    </padding>
+                    <font>
+                        <Font name="JetBrains Mono SemiBold" size="16.0" />
+                    </font>
+                </Label>
+                <Button fx:id="okay_button" mnemonicParsing="false" onAction="#okayButtonAction" text="okay">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.health.MainController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #043730;">
+         <children>
+            <BorderPane layoutX="-1.0" layoutY="-1.0" prefHeight="400.0" prefWidth="600.0">
+               <left>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+               </left>
+               <top>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="201.0" layoutY="-100.0" prefHeight="198.0" prefWidth="286.0" rotate="35.0" style="-fx-background-color: #ed6637; -fx-background-radius: 70;" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </top>
+            </BorderPane>
+            <Pane prefHeight="400.0" prefWidth="593.0">
+               <children>
+                  <VBox layoutX="115.0" layoutY="-7.0" prefHeight="407.0" prefWidth="484.0" style="-fx-background-color: #f8f2e6;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="85.0" prefWidth="470.0">
+                           <children>
+                              <Label text="Select your menu">
+                                 <font>
+                                    <Font name="JetBrains Mono SemiBold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children></HBox>
+                        <HBox prefHeight="140.0" prefWidth="471.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" />
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Button fx:id="exe_button" mnemonicParsing="false" onAction="#exeButtonAction" prefHeight="79.0" prefWidth="80.0" style="-fx-background-radius: 20; -fx-background-color: #043730;" text="exercise" textFill="WHITE" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Button fx:id="cal_button" mnemonicParsing="false" onAction="#calButtonAction" prefHeight="79.0" prefWidth="80.0" style="-fx-background-radius: 20; -fx-background-color: #043730;" text="Calorie" textFill="WHITE" />
+                                 </children></VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Button fx:id="daily_button" onAction="#dailyButtonAction" mnemonicParsing="false" prefHeight="79.0" prefWidth="80.0" style="-fx-background-radius: 20; -fx-background-color: #043730;" text="daily" textFill="WHITE" />
+                                 </children></VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="95.0" prefWidth="471.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" />
+                              <VBox prefHeight="200.0" prefWidth="100.0" />
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="79.0" prefWidth="80.0" style="-fx-background-radius: 20; -fx-background-color: #043730;" text="add friend" textFill="WHITE" />
+                                 </children></VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="79.0" prefWidth="80.0" style="-fx-background-radius: 20; -fx-background-color: #043730;" text="?" textFill="WHITE" />
+                                 </children></VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="84.0" prefWidth="484.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_RIGHT" layoutX="-26.0" prefHeight="400.0" prefWidth="164.0" style="-fx-background-color: #043730;">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../brand%20logo.png" />
+                           </image></ImageView>
+                        <HBox prefHeight="73.0" prefWidth="133.0" />
+                        <HBox prefHeight="81.0" prefWidth="133.0">
+                           <children>
+                              <Button fx:id="page_button" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#pageButtonAction" prefHeight="36.0" prefWidth="133.0" style="-fx-background-radius: 30; -fx-background-color: #ed6637;" styleClass="backgroundColor" text="My Page">
+                                 <font>
+                                    <Font name="JetBrains Mono SemiBold" size="18.0" />
+                                 </font></Button>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="logout_button" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#logoutButtonAction" prefHeight="36.0" prefWidth="133.0" style="-fx-background-radius: 30; -fx-background-color: #ed6637;" styleClass="backgroundColor" text="Log Out">
+                                 <font>
+                                    <Font name="JetBrains Mono SemiBold" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

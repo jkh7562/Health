@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.health.RoutinePopUpController">
+    <children>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="394.0" style="-fx-background-color: #B0C0CB;">
+            <children>
+                <Pane layoutX="4.0" layoutY="5.0" prefHeight="261.0" prefWidth="386.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="43.0" prefWidth="386.0">
+                            <children>
+                        <Label alignment="CENTER" prefHeight="22.0" prefWidth="70.0" style="-fx-background-color: #E9E9E9;" text="운동루틴" />
+                            </children>
+                        </HBox>
+                        <GridPane layoutX="14.0" layoutY="81.0" prefHeight="136.0" prefWidth="360.0">
+                            <columnConstraints>
+                                <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="180.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);">
+                                    <children>
+                                        <Label prefHeight="14.0" prefWidth="83.0" />
+                                        <Button mnemonicParsing="false" prefHeight="22.0" prefWidth="24.0" style="-fx-background-color: #E9E9E9; -fx-background-radius: 20;" text="+" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.rowIndex="1">
+                                    <children>
+                                        <Label fx:id="routinename3" prefHeight="14.0" prefWidth="85.0" />
+                                        <Button fx:id="AddToRoutine3" mnemonicParsing="false" onAction="#addToRoutine3" prefHeight="22.0" prefWidth="24.0" style="-fx-background-color: #E9E9E9; -fx-background-radius: 20;" text="+" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" layoutX="10.0" layoutY="44.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);">
+                                    <children>
+                                        <Label fx:id="routinename1" prefHeight="14.0" prefWidth="85.0" />
+                                        <Button fx:id="AddToRoutine1" mnemonicParsing="false" onAction="#addToRoutine1" prefHeight="22.0" prefWidth="24.0" style="-fx-background-color: #E9E9E9; -fx-background-radius: 20;" text="+" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="1">
+                                    <children>
+                                        <Label fx:id="routinename2" prefHeight="14.0" prefWidth="85.0" />
+                                        <Button fx:id="AddToRoutine2" mnemonicParsing="false" onAction="#addToRoutine2" prefHeight="22.0" prefWidth="24.0" style="-fx-background-color: #E9E9E9; -fx-background-radius: 20;" text="+" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <children>
+                                        <Label fx:id="routinename4" prefHeight="14.0" prefWidth="85.0" />
+                                        <Button fx:id="AddToRoutine4" mnemonicParsing="false" onAction="#addToRoutine4" prefHeight="22.0" prefWidth="24.0" style="-fx-background-color: #E9E9E9; -fx-background-radius: 20;" text="+" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.rowIndex="2">
+                                    <children>
+                                        <Label fx:id="routinename5" prefHeight="14.0" prefWidth="85.0" />
+                                        <Button fx:id="AddToRoutine5" mnemonicParsing="false" onAction="#addToRoutine5" prefHeight="22.0" prefWidth="24.0" style="-fx-background-color: #E9E9E9; -fx-background-radius: 20;" text="+" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" layoutX="10.0" layoutY="79.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <children>
+                                        <Label fx:id="routinename6" prefHeight="14.0" prefWidth="85.0" />
+                                        <Button fx:id="AddToRoutine6" mnemonicParsing="false" onAction="#addToRoutine6" prefHeight="22.0" prefWidth="24.0" style="-fx-background-color: #E9E9E9; -fx-background-radius: 20;" text="+" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" layoutX="10.0" layoutY="79.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.rowIndex="3">
+                                    <children>
+                                        <Label fx:id="routinename7" prefHeight="14.0" prefWidth="85.0" />
+                                        <Button fx:id="AddToRoutine7" mnemonicParsing="false" onAction="#addToRoutine7" prefHeight="22.0" prefWidth="24.0" style="-fx-background-color: #E9E9E9; -fx-background-radius: 20;" text="+" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                    <children>
+                                        <Label fx:id="routinename8" prefHeight="14.0" prefWidth="85.0" />
+                                        <Button fx:id="AddToRoutine8" mnemonicParsing="false" onAction="#addToRoutine8" prefHeight="22.0" prefWidth="24.0" style="-fx-background-color: #E9E9E9; -fx-background-radius: 20;" text="+" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </GridPane>
+                  <Button fx:id="back" layoutX="168.0" layoutY="225.0" mnemonicParsing="false" onAction="#backButtonAction" text="BACK" />
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

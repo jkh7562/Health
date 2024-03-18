@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.health.CldrController">
+    <center>
+        <GridPane fx:id="grid" prefHeight="643.0" prefWidth="1330.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <VBox fx:id="box00" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black black; -fx-border-style: segments(3, 3, 3, 3);">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day00" alignment="CENTER" textFill="#fe4371">
+                                    <HBox.margin>
+                                        <Insets right="3.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="stamp00" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                            <VBox.margin>
+                                <Insets left="3.0" />
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox fx:id="box10" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="1">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day10" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp10" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox fx:id="box20" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="2">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day20" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp20" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox fx:id="box30" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="3">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day30" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp30" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox fx:id="box50" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="5">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day50" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp50" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box60" onMouseClicked="#boxMouseClick" prefHeight="103.0" prefWidth="193.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="6">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day60" alignment="CENTER" textFill="#0044ff">
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                                </Label>
+                                <ImageView fx:id="stamp60" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box01" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.rowIndex="1">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day01" alignment="CENTER" textFill="#fe4371">
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="stamp01" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box11" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day11" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp11" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box21" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day21" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp21" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box31" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day31" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp31" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box41" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day41" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp41" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box51" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day51" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp51" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box61" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day61" alignment="CENTER" textFill="#0044ff">
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                                </Label>
+                                <ImageView fx:id="stamp61" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box02" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.rowIndex="2">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day02" alignment="CENTER" textFill="#fe4371">
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="stamp02" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box12" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day12" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp12" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box22" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day22" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp22" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box32" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day32" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp32" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box42" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day42" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp42" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box52" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day52" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp52" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box62" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day62" alignment="CENTER" textFill="#0044ff">
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                                </Label>
+                                <ImageView fx:id="stamp62" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box03" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.rowIndex="3">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day03" alignment="CENTER" textFill="#fe4371">
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="stamp03" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box13" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day13" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp13" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box23" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day23" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp23" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box33" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day33" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp33" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box43" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day43" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp43" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box53" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day53" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp53" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box63" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day63" alignment="CENTER" textFill="#0044ff">
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                                </Label>
+                                <ImageView fx:id="stamp63" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box04" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.rowIndex="4">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day04" alignment="CENTER" textFill="#fe4371">
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="stamp04" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box14" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day14" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp14" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box24" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day24" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp24" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box34" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day34" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp34" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box44" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day44" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp44" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box54" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day54" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp54" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box64" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day64" alignment="CENTER" textFill="#0044ff">
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                                </Label>
+                                <ImageView fx:id="stamp64" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box05" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.rowIndex="5">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day05" alignment="CENTER" textFill="#fe4371">
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="stamp05" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box15" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day15" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp15" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box25" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day25" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp25" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box45" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day45" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp45" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box55" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day55" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp55" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box65" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day65" alignment="CENTER" textFill="#0044ff">
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                                </Label>
+                                <ImageView fx:id="stamp65" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box35" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day35" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp35" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+                <VBox fx:id="box40" onMouseClicked="#boxMouseClick" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white black black white; -fx-border-style: segments(3, 3, 3, 3);" GridPane.columnIndex="4">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="day40" alignment="CENTER">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="3.0" right="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="stamp40" fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../exercise.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="8.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children></VBox>
+            </children>
+        </GridPane>
+    </center>
+    <top>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER_LEFT" style="-fx-background-color: #ecf5fd; -fx-border-color: #f2f9e9 #f2f9e9 #0079c4 #f2f9e9;">
+                    <children>
+                        <Button fx:id="add_button" alignment="CENTER" mnemonicParsing="false" onAction="#addButtonAction" style="-fx-background-color: #ecf5fd; -fx-background-radius: 100;" text="+" textFill="#043730">
+                            <HBox.margin>
+                                <Insets bottom="1.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font size="32.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="back_button" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="35.0" prefWidth="95.0" style="-fx-background-color: #ed6637; -fx-background-radius: 50;" text="Back" textFill="WHITE">
+                            <font>
+                                <Font name="JetBrains Mono SemiBold" size="14.0" />
+                            </font></Button>
+                    </children>
+                </HBox>
+                <HBox prefHeight="0.0" prefWidth="611.0" style="-fx-background-color: white;">
+                    <children>
+                        <Button fx:id="btnBMonth" mnemonicParsing="false" onAction="#onPreviousMonthButtonClick" style="-fx-background-color: #043730; -fx-background-radius: 50;" text="&lt;" textFill="WHITE">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="132.0" top="25.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Button>
+                  <HBox maxHeight="20.0" prefHeight="0.0" prefWidth="159.0" style="-fx-background-color: #043730; -fx-background-radius: 500;">
+                     <children>
+                        <Label fx:id="yearLabel" alignment="CENTER" contentDisplay="CENTER" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="35.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="년" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" right="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="monthLabel" alignment="CENTER" contentDisplay="CENTER" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="월" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="60.0" top="23.0" />
+                     </HBox.margin>
+                  </HBox>
+                        <Button fx:id="btnNMonth" mnemonicParsing="false" onAction="#onNextMonthButtonClick" style="-fx-background-color: #043730; -fx-background-radius: 50;" text="&gt;" textFill="WHITE">
+                            <HBox.margin>
+                                <Insets bottom="15.0" left="66.0" right="15.0" top="25.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox prefHeight="34.0" prefWidth="830.0">
+                    <children>
+                        <Label text="일" textFill="#fe4371">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="35.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Label text="월">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="73.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Label text="화">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="72.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Label text="수">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="70.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Label text="목">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="70.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Label text="금">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="70.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Label text="토" textFill="#726cf2">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="72.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </top>
+</BorderPane>

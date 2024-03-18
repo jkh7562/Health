@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.health.lostController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <BorderPane layoutY="57.0" prefHeight="343.0" prefWidth="600.0" style="-fx-background-color: #f8f2e6;">
+               <bottom>
+                  <HBox alignment="CENTER" prefHeight="53.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="back_button" mnemonicParsing="false" onAction="#backButtonAction" style="-fx-background-color: #043730;" text="Back" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+               </bottom>
+               <left>
+                  <VBox prefHeight="290.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="292.0" prefWidth="300.0">
+                           <children>
+                              <VBox prefHeight="290.0" prefWidth="42.0" />
+                              <VBox alignment="CENTER" prefHeight="290.0" prefWidth="221.0">
+                                 <children>
+                                    <Label text="Find Your ID">
+                                       <font>
+                                          <Font name="JetBrains Mono SemiBold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Enter Name">
+                                       <padding>
+                                          <Insets top="30.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="JetBrains Mono SemiBold" size="13.0" />
+                                       </font></Label>
+                                    <TextField fx:id="name_textfield" alignment="CENTER" promptText="Enter Name">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin></TextField>
+                                    <Label text="Enter Phone Number">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="JetBrains Mono SemiBold" size="13.0" />
+                                       </font></Label>
+                                    <TextField fx:id="phone_textfield" alignment="CENTER" promptText="Enter Phone Number">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin></TextField>
+                                    <Button fx:id="id_button" mnemonicParsing="false" onAction="#idButtonAction" style="-fx-background-color: #ed6637;" text="Find ID" textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets top="50.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="JetBrains Mono SemiBold" size="13.0" />
+                                       </font></Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </left>
+               <right>
+                  <VBox prefHeight="290.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="291.0" prefWidth="300.0">
+                           <children>
+                              <VBox prefHeight="291.0" prefWidth="42.0" />
+                              <VBox alignment="CENTER" prefHeight="291.0" prefWidth="214.0">
+                                 <children>
+                                    <Label fx:id="id_label" text="이 곳에 당신의 ID가 표시됩니다.">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children></VBox>
+               </right>
+            </BorderPane>
+            <AnchorPane layoutX="-1.0" prefHeight="58.0" prefWidth="606.0" style="-fx-background-color: #043730;">
+               <children>
+                  <Label layoutX="203.0" layoutY="8.0" text="Find your ID" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

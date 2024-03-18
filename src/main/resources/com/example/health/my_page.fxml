@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.health.PageController">
+   <children>
+      <VBox layoutX="-31.0" prefHeight="400.0" prefWidth="142.0" style="-fx-background-color: #043730;">
+         <children>
+            <HBox prefHeight="65.0" prefWidth="142.0" />
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="255.0" prefWidth="142.0">
+               <children>
+                  <VBox prefHeight="222.0" prefWidth="143.0">
+                     <children>
+                        <Button alignment="CENTER_RIGHT" layoutX="10.0" layoutY="20.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="125.0" style="-fx-background-color: #ed6637; -fx-background-radius: 2em;" text="프로필" textFill="WHITE">
+                           <font>
+                              <Font name="Vivaldi Italic" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="pw_button" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#pwButtonAction" prefHeight="36.0" prefWidth="82.0" style="-fx-background-color: #ed6637; -fx-background-radius: 2em;" text="비번" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="JetBrains Mono SemiBold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="delaccount_button" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#delaccountButtonAction" prefHeight="36.0" prefWidth="82.0" style="-fx-background-color: #ed6637; -fx-background-radius: 2em;" text="탈퇴" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children></HBox>
+            <HBox layoutX="10.0" layoutY="132.0" prefHeight="48.0" prefWidth="156.0">
+               <children>
+                  <Button fx:id="back_button" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #ed6637; -fx-background-radius: 50;" text="Back" textFill="WHITE">
+                     <font>
+                        <Font name="JetBrains Mono SemiBold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children></VBox>
+      <VBox layoutX="111.0" prefHeight="400.0" prefWidth="489.0" style="-fx-background-color: #f8f2e6;">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="64.0" prefWidth="490.0">
+               <children>
+                  <Label text="Profile">
+                     <font>
+                        <Font name="JetBrains Mono SemiBold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Pane prefHeight="354.0" prefWidth="490.0">
+               <children>
+                  <VBox prefHeight="346.0" prefWidth="85.0" />
+                  <VBox alignment="BOTTOM_CENTER" layoutX="394.0" prefHeight="95.0" prefWidth="96.0" />
+                  <HBox layoutX="69.0" layoutY="278.0" prefHeight="55.0" prefWidth="345.0" />
+                  <Pane layoutX="61.0" layoutY="8.0" prefHeight="159.0" prefWidth="318.0" style="-fx-background-color: #ECE7DB; -fx-background-radius: 30;">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="159.0" prefWidth="85.0">
+                           <children>
+                              <ImageView fitHeight="124.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../data.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="95.0" prefHeight="159.0" prefWidth="187.0">
+                           <children>
+                              <Label text="Enter Profile">
+                                 <font>
+                                    <Font name="JetBrains Mono SemiBold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="height_textfield" alignment="CENTER" layoutX="10.0" layoutY="10.0" promptText="Height">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="weight_textfield" alignment="CENTER" layoutX="10.0" layoutY="32.0" promptText="Weight">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="age_textfield" alignment="CENTER" layoutX="10.0" layoutY="55.0" prefWidth="187.0" promptText="Age">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="60.0" layoutY="174.0" prefHeight="159.0" prefWidth="318.0" style="-fx-background-color: #ECE7DB; -fx-background-radius: 30;">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="159.0" prefWidth="85.0">
+                           <children>
+                              <ImageView fitHeight="124.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../user.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="95.0" prefHeight="159.0" prefWidth="187.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="0.0" prefWidth="110.0" text="Saved Profile" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="JetBrains Mono SemiBold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" />
+                                 </padding>
+                              </Label>
+                              <HBox layoutX="10.0" layoutY="69.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="42.0" style="-fx-background-radius: 5.0.0.0;" text="Height:">
+                                       <HBox.margin>
+                                          <Insets left="5.0" right="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="height_label" layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="133.0" style="-fx-background-radius: 5;">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="80.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="48.0" style="-fx-background-radius: 5.0.0.0;" text="weight:">
+                                       <HBox.margin>
+                                          <Insets left="5.0" right="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="weight_label" layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="133.0" style="-fx-background-radius: 5;">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="89.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="42.0" style="-fx-background-radius: 5.0.0.0;" text="Age:">
+                                       <HBox.margin>
+                                          <Insets left="5.0" right="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="age_label" layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="133.0" style="-fx-background-radius: 5;">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="15.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Button fx:id="save_button" layoutX="398.0" layoutY="64.0" mnemonicParsing="false" onAction="#saveButtonAction" prefHeight="47.0" prefWidth="75.0" style="-fx-background-color: #ECE7DB; -fx-background-radius: 30;" text="Save">
+                     <font>
+                        <Font name="JetBrains Mono SemiBold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children></VBox>
+   </children>
+</AnchorPane>

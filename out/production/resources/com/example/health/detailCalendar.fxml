@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.health.DtilCldrController">
+    <center>
+        <VBox prefHeight="200.0" prefWidth="600.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="TOP_RIGHT" prefHeight="49.0" prefWidth="500.0" style="-fx-background-color: white; -fx-border-color: white white #0079c4 white;">
+                    <children>
+                        <Button fx:id="save_button" onAction="#onSaveButtonClick" mnemonicParsing="false" style="-fx-background-color: #FD9400;" text="Save">
+                            <HBox.margin>
+                                <Insets bottom="10.0" right="230.0" top="10.0" />
+                            </HBox.margin>
+                     <font>
+                        <Font name="JetBrains Mono SemiBold" size="12.0" />
+                     </font>
+                        </Button>
+                  <DatePicker fx:id="date_picker" prefWidth="191.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </DatePicker>
+                    </children>
+                </HBox>
+                <HBox prefHeight="69.0" prefWidth="600.0">
+                    <children>
+                        <TextField fx:id="title_textfield" prefHeight="39.0" prefWidth="430.0" promptText="등록된 일정이 없습니다." style="-fx-background-color: white; -fx-opacity: 1.0;">
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="30.0" top="10.0" />
+                            </HBox.margin></TextField>
+                    </children>
+                </HBox>
+                <HBox prefHeight="34.0" prefWidth="500.0" style="-fx-border-color: #043730 white white white; -fx-border-style: dotted;">
+                    <children>
+                        <Label text="세부사항" textFill="#ff9000">
+                            <HBox.margin>
+                                <Insets left="45.0" top="10.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox prefHeight="316.0" prefWidth="500.0" style="-fx-opacity: 1.0;">
+               <children>
+                  <TextArea fx:id="content_textarea" promptText="여기에 입력하세요." />
+               </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="40.0" prefWidth="500.0" style="-fx-background-color: e2e2e2;">
+                    <children>
+                        <Label fx:id="del_label" onMouseClicked="#onDeleteLabelClick" text="일정 삭제" textFill="RED">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="500.0" style="-fx-background-color: #043730;" BorderPane.alignment="CENTER">
+            <children>
+            <Button fx:id="back_button" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #FD9400;" text="Back">
+               <font>
+                  <Font name="JetBrains Mono SemiBold" size="14.0" />
+               </font>
+            </Button>
+                <ImageView fitHeight="90.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../brand%20logo.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="7.0" top="2.0" />
+                    </HBox.margin>
+                </ImageView>
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

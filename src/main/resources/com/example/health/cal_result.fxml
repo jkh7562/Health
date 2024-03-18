@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.health.CalPopupController">
+    <children>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="394.0" style="-fx-background-color: #B0C0CB;">
+            <children>
+                <Pane layoutX="4.0" layoutY="5.0" prefHeight="261.0" prefWidth="386.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                    <children>
+                        <HBox prefHeight="261.0" prefWidth="386.0">
+                            <children>
+                                <VBox prefHeight="261.0" prefWidth="386.0">
+                                    <children>
+                                        <HBox alignment="BOTTOM_CENTER" prefHeight="40.0" prefWidth="262.0">
+                                            <children>
+                                                <Label prefHeight="32.0" prefWidth="92.0" text="영양소 정보 확인" />
+                                            </children>
+                                        </HBox>
+                                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="182.0" prefWidth="278.0">
+                                            <children>
+                                                <VBox prefHeight="182.0" prefWidth="386.0">
+                                                    <children>
+                                                        <HBox alignment="CENTER" prefHeight="36.0" prefWidth="262.0">
+                                                            <children>
+                                                                <Label text="칼로리 : " />
+                                                                <Label fx:id="accCalories" prefHeight="14.0" prefWidth="70.0" />
+                                                                <Label text=" 지     방   :" />
+                                                                <Label fx:id="accFats" layoutX="85.0" layoutY="21.0" prefHeight="14.0" prefWidth="70.0" />
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="262.0">
+                                                            <children>
+                                                                <Label text="단백질 :" />
+                                                                <Label fx:id="accPortiens" prefHeight="14.0" prefWidth="70.0" />
+                                                                <Label text="탄수화물 : " />
+                                                                <Label fx:id="accCarbs" layoutX="85.0" layoutY="21.0" prefHeight="14.0" prefWidth="70.0" />
+                                                            </children>
+                                                            <VBox.margin>
+                                                                <Insets bottom="15.0" />
+                                                            </VBox.margin>
+                                                        </HBox>
+                                                        <HBox alignment="CENTER" layoutX="10.0" layoutY="46.0" prefHeight="29.0" prefWidth="262.0">
+                                                            <children>
+                                                                <Label text="권장 칼로리              :" />
+                                                                <Label fx:id="rcmdCal" prefHeight="14.0" prefWidth="102.0" />
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox alignment="CENTER" layoutX="10.0" layoutY="82.0" prefHeight="33.0" prefWidth="262.0">
+                                                            <children>
+                                                                <Label text="오늘 섭취한 칼로리 :" />
+                                                                <Label fx:id="todayCal" prefHeight="14.0" prefWidth="103.0" />
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox alignment="CENTER" layoutX="10.0" layoutY="118.0" prefHeight="25.0" prefWidth="262.0">
+                                                            <children>
+                                                                <Label text="필요 식단 조절     :" />
+                                                                <Label fx:id="tomorrowCal" prefHeight="14.0" prefWidth="105.0" />
+                                                            </children>
+                                                        </HBox>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" layoutX="10.0" layoutY="78.0" prefHeight="40.0" prefWidth="262.0">
+                                            <children>
+                                                <Button mnemonicParsing="false" onAction="#closePopup" style="-fx-background-color: #B0C0CB;" text="닫기" textFill="#4d3434" />
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

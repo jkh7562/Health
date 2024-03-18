@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #043730;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.health.exeController">
+   <children>
+      <VBox layoutX="110.0" prefHeight="401.0" prefWidth="504.0" style="-fx-background-radius: 30; -fx-background-color: ffffff;">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="91.0" prefWidth="500.0" style="-fx-background-radius: 50;">
+               <children>
+                  <VBox>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="biceps" fitHeight="105.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 50;">
+                           <image>
+                              <Image url="@../../../bicep.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="70.0" text="biceps">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="triceps" fitHeight="105.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../tricp.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="triceps" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="109.0" prefWidth="310.0">
+                     <children>
+                        <Button fx:id="back_button" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="41.0" prefWidth="118.0" style="-fx-background-color: #043730; -fx-background-radius: 50;" text="Back to menu" textFill="WHITE">
+                           <font>
+                              <Font name="JetBrains Mono SemiBold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="chest" fitHeight="85.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../chest.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="chest" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="front_shoulder" fitHeight="105.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../frontshldr.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="front shoulder" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="back_shoulder" fitHeight="104.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../shdlr.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="back shoulder" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="trapezius" fitHeight="88.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../seungmo.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="trapezius" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="high_back" fitHeight="105.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../highback.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="high back" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="mid_back" fitHeight="105.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../midback.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="mid back" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="low_back" fitHeight="105.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../lowback.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="low back" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="497.0">
+               <children>
+                  <VBox alignment="CENTER">
+                     <HBox.margin>
+                        <Insets right="4.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="high_abs" fitHeight="105.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../highabs.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="high abs" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <HBox.margin>
+                        <Insets right="4.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="low_abs" fitHeight="105.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../lowabs.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="low abs" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <HBox.margin>
+                        <Insets right="4.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="side_abs" fitHeight="96.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../sideabs.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="side abs" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <HBox.margin>
+                        <Insets right="4.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="front_thighs" fitHeight="105.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../fronttha.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="front thight" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <HBox.margin>
+                        <Insets right="4.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="back_thighs" fitHeight="105.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../backtha.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="back thight" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children></VBox>
+      <VBox layoutX="-44.0" layoutY="1.0" prefHeight="442.0" prefWidth="153.0" style="-fx-background-color: #043730; -fx-background-radius: 30;">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="108.0" prefWidth="153.0">
+               <children>
+                  <Button fx:id="arm_button" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#armButtonAction" prefHeight="36.0" prefWidth="133.0" style="-fx-background-radius: 30; -fx-background-color: #ed6637;" styleClass="backgroundColor" text="Arm" textFill="WHITE">
+                     <font>
+                        <Font name="JetBrains Mono SemiBold" size="18.0" />
+                     </font></Button>
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="chsh_button" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#chshButtonAction" prefHeight="38.0" prefWidth="151.0" style="-fx-background-radius: 30; -fx-background-color: #ed6637;" styleClass="backgroundColor" text="Chest/Shoulder" textFill="WHITE">
+                     <font>
+                        <Font name="JetBrains Mono SemiBold" size="11.0" />
+                     </font></Button>
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="Back_button" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#BackButtonAction" prefHeight="38.0" prefWidth="151.0" style="-fx-background-radius: 30; -fx-background-color: #ed6637;" styleClass="backgroundColor" text="Back" textFill="WHITE">
+                     <font>
+                        <Font name="JetBrains Mono SemiBold" size="18.0" />
+                     </font></Button>
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="ablg_button" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#ablgButtonAction" prefHeight="38.0" prefWidth="151.0" style="-fx-background-radius: 30; -fx-background-color: #ed6637;" styleClass="backgroundColor" text="Abs/Leg" textFill="WHITE">
+                     <font>
+                        <Font name="JetBrains Mono SemiBold" size="18.0" />
+                     </font></Button>
+               </children></HBox>
+         </children></VBox>
+   </children>
+</AnchorPane>

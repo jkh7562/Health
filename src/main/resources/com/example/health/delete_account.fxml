@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.health.DelAccountController">
+    <children>
+        <VBox layoutX="-31.0" prefHeight="400.0" prefWidth="142.0" style="-fx-background-color: #043730;">
+            <children>
+                <HBox prefHeight="65.0" prefWidth="142.0" />
+                <HBox layoutX="10.0" layoutY="10.0" prefHeight="255.0" prefWidth="142.0">
+                    <children>
+                        <VBox prefHeight="192.0" prefWidth="143.0">
+                            <children>
+                                <Button fx:id="profile_button" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="15.0" mnemonicParsing="false" onAction="#profileButtonAction" prefHeight="36.0" prefWidth="82.0" style="-fx-background-color: #ed6637; -fx-background-radius: 2em;" text="프로필" textFill="WHITE">
+                                    <font>
+                                        <Font size="13.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" />
+                                    </VBox.margin>
+                                </Button>
+                                <Button fx:id="pw_button" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#pwButtonAction" prefHeight="36.0" prefWidth="82.0" style="-fx-background-color: #ed6637; -fx-background-radius: 2em;" text="비번" textFill="WHITE">
+                                    <VBox.margin>
+                                        <Insets top="5.0" />
+                                    </VBox.margin>
+                                    <font>
+                                        <Font name="JetBrains Mono SemiBold" size="15.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="delaccount_button" alignment="CENTER_RIGHT" mnemonicParsing="false" prefHeight="36.0" prefWidth="125.0" style="-fx-background-color: #ed6637; -fx-background-radius: 2em;" text="회원 탈퇴" textFill="WHITE">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" top="10.0" />
+                                    </VBox.margin>
+                                    <font>
+                                        <Font name="Vivaldi Italic" size="15.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </VBox>
+                    </children></HBox>
+                <HBox layoutX="10.0" layoutY="132.0" prefHeight="48.0" prefWidth="156.0">
+                    <children>
+                        <Button fx:id="back_button" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #ed6637; -fx-background-radius: 50;" text="Back" textFill="WHITE">
+                            <font>
+                                <Font name="JetBrains Mono SemiBold" size="18.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+            </children></VBox>
+        <VBox layoutX="111.0" prefHeight="400.0" prefWidth="489.0" style="-fx-background-color: #f8f2e6;">
+            <children>
+                <HBox alignment="BOTTOM_CENTER" prefHeight="64.0" prefWidth="490.0">
+                    <children>
+                        <Label text="Delete Account">
+                            <font>
+                                <Font name="JetBrains Mono SemiBold" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <Pane prefHeight="354.0" prefWidth="490.0">
+                    <children>
+                        <VBox prefHeight="346.0" prefWidth="85.0" />
+                        <VBox alignment="BOTTOM_CENTER" layoutX="394.0" prefHeight="95.0" prefWidth="96.0" />
+                        <HBox alignment="CENTER" layoutX="69.0" layoutY="278.0" prefHeight="55.0" prefWidth="345.0">
+                            <children>
+                                <Button fx:id="del_button" mnemonicParsing="false" onAction="#delButtonAction" prefHeight="47.0" prefWidth="75.0" style="-fx-background-color: #ECE7DB; -fx-background-radius: 30;" text="Delete">
+                                    <font>
+                                        <Font name="JetBrains Mono SemiBold" size="14.0" />
+                                    </font>
+                                </Button>
+                            </children></HBox>
+                        <Pane layoutX="61.0" layoutY="8.0" prefHeight="225.0" prefWidth="381.0" style="-fx-background-color: #ECE7DB; -fx-background-radius: 30;">
+                            <children>
+                                <TextArea fx:id="feedback_textarea" layoutX="-1.0" layoutY="39.0" prefHeight="186.0" prefWidth="381.0" style="-fx-background-color: #ECE7DB; -fx-background-radius: 30;" />
+                                <Label layoutX="75.0" prefHeight="38.0" prefWidth="231.0" text="계정 탈퇴의 이유는 무엇입니까? Feed Back" />
+                            </children></Pane>
+                    </children>
+                </Pane>
+            </children></VBox>
+    </children>
+</AnchorPane>
