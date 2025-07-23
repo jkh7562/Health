@@ -22,7 +22,7 @@
   - PHP  
 - **개발 환경**:  
   - JavaFX  
-  - phpMyAdmin  
+  - phpMyAdmin(MySQL)  
   - FileZilla  
 
 ## 프로젝트 성과
